@@ -7,9 +7,23 @@
 		<title>陈跃夫-个人网站</title>
 	</head>
 	<body>
+		<ul id="menu">
+			<li data-menuanchor="page1" class="active">
+				<a href="#page1">首页</a>
+			</li>
+			<li data-menuanchor="page2">
+				<a href="#page2">项目</a>
+			</li>
+			<li data-menuanchor="page3">
+				<a href="#page3">博客</a>
+			</li>
+			<li data-menuanchor="page4">
+				<a href="#page4">知识速查</a>
+			</li>
+		</ul>
 		<div id="app">
 			<div class="section">
-				1
+				<div></div>
 			</div>
 			<div class="section">
 				2
@@ -18,7 +32,11 @@
 				<a href="/blog">博客</a>
 			</div>
 			<div class="section">
-				4
+				<ul>
+					<li>
+						<a href="mind-map/markdown.html">Markdown</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 		<script src="js/jquery-1.8.3.min.js"></script>
@@ -26,9 +44,11 @@
 		<script>
 			$(function(){
 				$('#app').fullpage({
+					menu: '#menu',
+					anchors: ['page1','page2','page3','page4'],
 					sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
-					verticalCentered: false,
-					resize: true
+					//verticalCentered: false,
+					resize: true,
 				});
 			});
 		</script>

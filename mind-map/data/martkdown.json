@@ -1,0 +1,58 @@
+{
+ "name": "markdown",
+ "value": "markdown语法速查",
+ "children": [{
+	"name": "标题",
+	"value": "标题",
+	"children": [{
+		"name": "一级标题",
+		"value": "# 一级标题"
+	},{
+		"name": "二级标题",
+		"value": "## 二级标题"
+	},{
+		"name": "三级标题",
+		"value": "### 三级标题"
+	}]	
+ },{
+ 	"name": "列表",
+ 	"value": "列表",
+ 	"children": [{
+ 		"name": "无序列表",
+ 		"value": "* 无序列表"
+ 	},{
+ 		"name": "有序列表",
+ 		"value": "1. 有序列表"
+ 	}]
+ },{
+ 	"name": "引用",
+ 	"value": "> 这里是引用"
+ },{
+ 	"name": "图片与链接",
+ 	"children": [{
+ 		"name": "图片",
+ 		"value": "![Mou icon](http://xxx.png)"
+ 	},{
+ 		"name": "链接",
+ 		"value": "[百度](http://baidu.com)"
+ 	}]
+ },{
+ 	"name": "粗体与斜体",
+ 	"children": [{
+ 		"name": "粗体",
+ 		"value": "**用两个 * 包含一段文本就是粗体的语法**"
+ 	},{
+ 		"name": "斜体",
+ 		"value": "*用一个 * 包含一段文本就是斜体的语法*"
+ 	}]
+ },{
+ 	"name": "表格",
+ 	"value": "| Tables        | Are           | Cool  | <br/> | ------------- |:-------------:| -----:| <br/> | col 3 is      | right-aligned | $1600 | <br/> | col 2 is      | centered      |   $12 | <br/> | zebra stripes | are neat      |    $1 |"
+ },{
+ 	"name": "代码框",
+ 	"value": "`只需要用两个 ` 把中间的代码包裹起来`"
+ },{
+ 	"name": "分割线",
+ 	"value": "分割线的语法只需要三个 * 号"
+ }]
+}
