@@ -50,7 +50,7 @@
  	"value": "| Tables        | Are           | Cool  | <br/> | ------------- |:-------------:| -----:| <br/> | col 3 is      | right-aligned | $1600 | <br/> | col 2 is      | centered      |   $12 | <br/> | zebra stripes | are neat      |    $1 |"
  },{
  	"name": "代码框",
- 	"value": "`只需要用两个 ` 把中间的代码包裹起来`"
+ 	"value": "只需要用三个 ` 把中间的代码包裹起来"
  },{
  	"name": "分割线",
  	"value": "分割线的语法只需要三个 * 号"
