@@ -1,0 +1,27 @@
+{
+	"name": "linux",
+	"value": "linux语法速查",
+	"children": [{
+		"name": "文件和目录操作",
+		"value": "",
+		"children": [{
+			"name" : "进入目录",
+			"value": "cd /xxx"
+		},{
+			"name" : "查看目录中的文件",
+			"value": "ls"
+		},{
+			"name": "显示工作路径",
+			"value": "pwd"
+		},{
+			"name": "创建目录",
+			"value": "mkdir xxx"
+		},{
+			"name": "删除",
+			"value": "rm -f xxx"
+		}]
+	},{
+		"name": "查看文件内容",
+		"value": "vi xxx"
+	}]
+}

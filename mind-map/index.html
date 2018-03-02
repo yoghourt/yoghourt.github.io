@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>--知识图谱</title>
 		<style type="text/css">
 			html,body{
 				margin: 0;
@@ -23,9 +23,28 @@
 		<script src="../js/jquery-1.8.3.min.js"></script>
 		<script src="https://cdn.bootcss.com/echarts/3.8.5/echarts.min.js"></script>
 		<script>
+			
+			function getParamFromUrl(str){
+				var url =window.location.href,param;
+				var query = url.split("?")[1];
+				var queryArr = query.split("&");
+				queryArr.forEach(function(item){
+					var key = item.split("=")[0];
+					var value = item.split("=")[1];
+					if(key === str){
+						param = value
+					}else{
+						param = null
+					}
+				})
+				return param
+			}
+			var tag = getParamFromUrl("tag");
 			var myChart = echarts.init(document.getElementById('main'));
+			document.title = tag + "知识图谱";
 			myChart.showLoading();
-			$.get('data/martkdown.json', function (data) {
+			var dataUrl = 'data/'+tag+'.json';
+			$.get(dataUrl, function (data) {
 			    myChart.hideLoading();
 			
 			    echarts.util.each(data.children, function (datum, index) {
@@ -37,6 +56,7 @@
 			        tooltip: {
 			            trigger: 'item',
 			            triggerOn: 'mousemove',
+			            backgroundColor: '#000',
 			            formatter: function(params){
 			            	return params.data.value
 			            }
