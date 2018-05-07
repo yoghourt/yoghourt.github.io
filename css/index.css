@@ -1,4 +1,4 @@
-html,body,ul{margin: 0;padding: 0;}
+html,body,ul,h1,h2,h3,h4,h5{margin: 0;padding: 0;}
 ul{list-style-type: none;}
 a {outline-style:none;color:#fff;text-decoration:none}
 a:hover { color: #000; text-decoration: none}
@@ -97,6 +97,9 @@ a:hover { color: #000; text-decoration: none}
 	width: 100%;
 	height: 80%;
 }
+.gallery-top .swiper-slide{
+	position: relative;
+}
 .gallery-thumbs{
 	height: 20%;
 	box-sizing: border-box;
@@ -121,6 +124,7 @@ a:hover { color: #000; text-decoration: none}
 	font-size: 20px;
 	text-decoration: underline;
 	z-index: 1;
+	transform: translateX(-50%);
 }
 .blog-link a{
 	color: #191919;
@@ -128,4 +132,32 @@ a:hover { color: #000; text-decoration: none}
 .wordcloud,.sunburst{
 	width: 100%;
 	height: 100%;
+}
+.text-container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 20px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	background-color: rgba(0,0,0,.5);
+}
+.text-container .project-name{
+	font-size: 28pt;
+	color: #e1e1e1;
+}
+.text-container .tag{
+	display: inline-block;
+	padding: 6px 8px;
+	background-color: #34b4cd;
+	border-radius: 6px;
+}
+.text-container .introduce{
+	font-size: 16pt;
+	color: #e1e1e1;
+}
+.text-container .try-btn{
+	font-size: 20pt;
+	text-decoration: underline;
+	color: blue;
 }
